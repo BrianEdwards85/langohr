@@ -73,10 +73,10 @@
      :cluster-id       (.getClusterId input)})
 
 
-  com.rabbitmq.client.QueueingConsumer$Delivery
-  (to-message-metadata [input]
-    (merge (to-message-metadata (.getProperties input))
-           (to-message-metadata (.getEnvelope input))))
+;;  com.rabbitmq.client.QueueingConsumer$Delivery
+;;  (to-message-metadata [input]
+;;    (merge (to-message-metadata (.getProperties input))
+;;           (to-message-metadata (.getEnvelope input))))
 
   com.rabbitmq.client.GetResponse
   (to-message-metadata [input]

@@ -1,9 +1,9 @@
-(defproject com.novemberain/langohr "4.2.0-SNAPSHOT"
+(defproject com.novemberain/langohr "5.0.0-SNAPSHOT"
   :description "An idiomatic Clojure client for RabbitMQ that embraces the AMQP 0.9.1 model. Built on top of the RabbitMQ Java client"
   :min-lein-version "2.5.1"
   :license {:name "Eclipse Public License"}
   :dependencies [[org.clojure/clojure      "1.8.0"]
-                 [com.rabbitmq/amqp-client "4.2.0"]
+                 [com.rabbitmq/amqp-client "5.0.0"]
                  [clojurewerkz/support     "1.1.0" :exclusions [com.google.guava/guava]]
                  [clj-http                 "3.6.1"]
                  [cheshire                 "5.7.1"]]
@@ -21,7 +21,7 @@
                    :codox {:source-paths ["src/clojure"]}}}
   :source-paths      ["src/clojure"]
   :java-source-paths ["src/java"]
-  :javac-options     ["-target" "1.6" "-source" "1.6"]
+  :javac-options     ["-target" "1.8" "-source" "1.8"]
   :url "http://clojurerabbitmq.info"
   :repositories {"sonatype" {:url "http://oss.sonatype.org/content/repositories/releases"
                              :snapshots false
